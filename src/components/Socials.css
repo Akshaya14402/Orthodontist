@@ -1,0 +1,102 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;700&display=swap');
+
+.socials-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #01102dfe; /* Dark blue color */
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-title {
+    font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  color: #01102dfe; /* Dark blue color */
+  margin-bottom: 20px;
+}
+
+.doctor-image {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 3px solid #01102dfe; /* Dark blue border */
+
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info h2 {
+  font-family: 'Kalnia', sans-serif;
+  font-size: 28px;
+  color: #01102dfe; /* Dark blue color */
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.contact-info p i {
+  margin-right: 10px;
+}
+
+.qualifications {
+  margin-bottom: 20px;
+}
+
+.qualifications h2 {
+  font-family: 'Kalnia', sans-serif;
+  font-size: 28px;
+  color: #01102dfe; /* Dark blue color */
+  margin-bottom: 15px;
+}
+
+.skill-section {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.skill-section h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: #01102dfe; /* Dark blue color */
+  margin-bottom: 10px;
+}
+
+.skill-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.skill-section li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .doctor-title {
+    font-size: 28px;
+  }
+
+  .doctor-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .contact-info h2, .qualifications h2, .skill-section h3 {
+    font-size: 22px;
+  }
+
+  .skill-section li {
+    font-size: 16px;
+  }
+}

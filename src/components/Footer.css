@@ -1,0 +1,33 @@
+/* footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.footer {
+  background-color: #01102dfe; /* Container color */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.social-media-icons {
+  margin-top: 10px;
+}
+
+.social-media-icons a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-media-icons a:hover {
+  color: #007bff; /* Change color on hover */
+}

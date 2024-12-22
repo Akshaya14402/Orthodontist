@@ -1,0 +1,97 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Contact Form Styles */
+.contact-container {
+  display: flex;
+  max-width: 1400px; /* Increase the max-width for a wider container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light grey background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: auto; /* Allow the image container to be smaller */
+  max-height: 400px; /* Set a max height to reduce the image height */
+}
+
+.contact-image img {
+  max-width: 100%;
+  max-height: 100%; /* Ensure the image does not exceed the container height */
+  border-radius: 10px; /* Rounded corners for the image */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.contact-form {
+  flex: 2; /* Increase flex to make the form larger in comparison */
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Slightly rounded corners */
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #333; /* Darker border on focus */
+  outline: none; /* Remove default outline */
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical; /* Allow vertical resize */
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-align: center;
+  color: #01102dfe; /* Dark blue color */
+  background-color: white;
+  border: 2px solid #01102dfe; /* Dark blue border */
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #01102dfe; /* Dark blue background on hover */
+  color: white; /* White text on hover */
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .contact-image {
+    height: auto; /* Reset the height for smaller screens */
+  }
+
+  button {
+    width: 100%; /* Full width button on small screens */
+    padding: 15px;
+  }
+}
+;

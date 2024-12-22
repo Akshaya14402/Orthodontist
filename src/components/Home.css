@@ -1,0 +1,328 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;700&display=swap');
+
+/* Doctor Info Styles */
+.doctor-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #01102dfe; /* Dark blue border */
+ 
+}
+
+.doctor-image {
+  width: 350px; /* Increased size */
+  height: 350px; /* Increased size */
+  border-radius: 50%;
+  border: 2px solid #01102dfe; /* Dark blue border */
+
+
+}
+
+
+.doctor-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 1.5;
+  color: #01102dfe; /* Dark blue color */
+}
+.specialization{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px; /* Adjust font size for mobile view */
+  color: #01102dfe; /* Dark blue color */
+  text-align: right;
+  
+}
+
+/* Home Component Styles */
+.home-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1; /* Adjust transparency */
+  filter: blur(1px); /* Apply blur effect */
+  z-index: -1; /* Ensure the background is behind content */
+}
+
+.home-content {
+  background-color: none;
+  color: #01102dfe; /* Dark blue color */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.your-healthy-smile {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 33px;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: normal; /* Ensure text is not bold */
+  color: #01102dfe; /* Dark blue color */
+}
+
+.dental-clinic {
+  font-family: 'Kalnia', sans-serif;
+  font-size: 122px;
+  letter-spacing: 0;
+  line-height: 1.4;
+  text-align: center;
+  font-weight: normal; /* Ensure text is not bold */
+}
+
+.ongoing-education {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-align: justify; /* Justify text */
+  color: white;
+  font-weight: normal; /* Ensure text is not bold */
+}
+
+.expertise-container {
+  display: flex;
+  flex-direction: column; /* Change to column to stack title and description */
+  align-items: center;
+  background-color: #01102dfe; /* Dark blue color */
+  color: white;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.expertise-title {
+  font-family: 'Kalnia', sans-serif;
+  font-size: 52px;
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-align: left;
+  color: white; /* Ensure the title is in white */
+  font-weight: normal; /* Ensure text is not bold */
+  margin-bottom: 20px; /* Add space below the title */
+}
+.clinical-container {
+  display: flex;
+  flex-direction: column; /* Change to column to stack title and description */
+  align-items: center;
+  background-color:  white; /* Dark blue color */
+  color: #01102dfe;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.clinical-skills {
+  font-family: 'Kalnia', sans-serif;
+  font-size: 52px;
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-align: left;
+  color: #01102dfe; /* Ensure the title is in white */
+  font-weight: normal; /* Ensure text is not bold */
+  margin-bottom: 20px; /* Add space below the title */
+}
+.clinical-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-align: justify; /* Justify text */
+  color: #01102dfe;
+  font-weight: normal; /* Ensure text is not bold */
+}
+
+.our-services {
+  font-family: 'Kalnia', sans-serif;
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 1.1;
+  text-align: center;
+  color: #01102dfe; /* Dark blue color */
+  font-weight: normal; /* Ensure text is not bold */
+}
+
+.image-container {
+  position: relative;
+  width: 100%; /* Make the width 100% for responsive design */
+  height: auto; /* Adjust height for mobile view */
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 90px;
+}
+
+.slide {
+  position: absolute;
+  width: 80%; /* Adjust width for better visibility on small screens */
+  height: auto;
+  opacity: 0;
+  transform: scale(0.75);
+  transition: all 0.5s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slide.current {
+  opacity: 1;
+  transform: scale(0.9);
+  filter: blur(0);
+  z-index: 3;
+}
+
+.slide.next {
+  transform: translateX(60%) scale(0.75); 
+  opacity: 0.7;
+  filter: blur(3px);
+  z-index: 2;
+}
+
+.slide.prev {
+  transform: translateX(-60%) scale(0.75); 
+  opacity: 0.7;
+  filter: blur(3px);
+  z-index: 2;
+}
+
+.image-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px; /* Adjust font size for mobile view */
+  color: #01102dfe; /* Dark blue color */
+  text-align: center;
+  margin-top: 10px;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+ 
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-align: center;
+  color: #01102dfe; /* Dark blue color */
+  background-color: white;
+  border: 2px solid #01102dfe; /* Dark blue border */
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #01102dfe; /* Dark blue background on hover */
+  color: white; /* White text on hover */
+}
+
+@media (max-width: 768px) {
+  .doctor-image {
+    width: 350px;
+    height: 350px;
+  }
+
+  .your-healthy-smile {
+    font-size: 24px;
+  }
+
+  .dental-clinic {
+    font-size: 40px;
+  }
+
+  .expertise-title {
+    font-size: 32px;
+  }
+
+  .ongoing-education {
+    font-size: 18px;
+  }
+
+  .our-services {
+    font-size: 32px;
+  }
+
+  .expertise-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image-container {
+    width: 90%; 
+    height: 200px;
+  }
+  .slide {
+    width: 90%; /* Adjust slide width for mobile view */
+  }
+
+  .image-description {
+    font-size: 16px; /* Adjust font size for mobile view */
+  }
+
+  h1, h2, h5, button {
+    margin: 5px 0;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}
+
+@media (min-width: 769px) {
+  .doctor-image {
+    width: 350px;
+    height: 350px;
+  }
+
+  .your-healthy-smile {
+    font-size: 33px;
+  }
+
+  .dental-clinic {
+    font-size: 122px;
+  }
+
+  .expertise-title {
+    font-size: 52px;
+  }
+
+  .ongoing-education {
+    font-size: 22px;
+  }
+
+  .our-services {
+    font-size: 50px;
+  }
+
+  .image-container {
+    width: 60%;
+    height: 250px;
+  }
+
+  .slide {
+    width: 50%; /* Adjust slide width for desktop view */
+  }
+
+  .image-description {
+    font-size: 25px; /* Adjust font size for desktop view */
+  }
+
+  h1, h2, h5, button {
+    margin: 10px 0;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+}
